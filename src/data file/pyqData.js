@@ -124,7 +124,7 @@
                 },
                 {
                     code: "BCA-202",
-                    name: "Data Structure - II",
+                    name: "Data Structure - I",
                     links: {
                         2014: "https://drive.google.com/file/d/1rpR7wYp3vy463C7Pvg3udVLV9So43RS_/view?usp=drivesdk",
                         2016: "https://drive.google.com/file/d/1rqq3bn2w3gfxI6Os5PxU7CWM_t_ovLxB/view?usp=drivesdk",
