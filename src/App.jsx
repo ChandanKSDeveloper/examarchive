@@ -4,6 +4,7 @@ import Header from './components/header'
 import { Outlet, useLocation,Navigate } from "react-router-dom";
 import Footer from './components/footer';
 import Home from './components/home.jsx'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
  
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       {location.pathname ==='/' ? <Home/> : <Outlet />}
       <Footer />
+      <Analytics />
 
     </>
   )
