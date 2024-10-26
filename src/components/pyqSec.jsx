@@ -34,12 +34,14 @@ function Pyq(){
                                 </div>
                                 <div className={`previousYear ${visibleSubject === `${index}-${subjectIndex}` ? 'block' : 'hidden' }  text-center `}>
                                     {
-                                        Object.keys(subject.links).map((year)=>(
-                                            <div key={year}
-                                            className="bg-cyan-100 hover:bg-cyan-200 py-1 font-semibold duration-150 m-2 rounded-md
+                                        Object.keys(subject.links).map((year)=>(                 
+
+                                            <a key={year}
+                                            href={subject.links[year]}
+                                            className="block bg-cyan-100 hover:bg-cyan-200 py-1 font-semibold duration-150 m-2 rounded-md
                                             dark:bg-slate-500 dark:hover:bg-slate-600">
-                                              <a href={subject.links[year]} target="_blank" rel="noopener noreferrer" >{year}</a>  
-                                            </div>
+                                              <div className="text-center" >{year}</div>  
+                                            </a>
                                         ))
                                     }
                                 </div>
