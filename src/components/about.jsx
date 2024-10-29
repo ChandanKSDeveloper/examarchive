@@ -18,7 +18,7 @@ function About(){
             <div className="sm:grid gap-6 hidden">
                 {GridItems.map((item, index) => (
               
-                <div key={item.id} className="flex items-center mx-4 mb-4 hover:scale-110 ease-in-out duration-500  ">   
+                <div key={item.id} className="flex items-center mx-4 mb-4 hover:scale-105 ease-in-out duration-500  ">   
                     {!((index % 2 === 0 && index > 0) || index === 0) ? (
                     <>
                         <div className="w-3/12 ">
