@@ -222,7 +222,7 @@
                     code: "BCA-301",
                     name: "Management Information System",
                     links: {
-                        2017: "https://drive.google.com/file/d/1wD4ihmJDvIrilDT9tS58IMpn2wFbCsrB/view?usp=drivesdk",
+                        2017: "https://drive.google.com/file/d/1FV7xwo674m0IZCn3pxZLo6KpJiyki5K0/view?usp=drivesdk",
                         2018: "https://drive.google.com/file/d/1xD6-t0tOufNqCRZuZFiuwssM1WLtj2BD/view?usp=drivesdk",
                         2019: "https://drive.google.com/file/d/1wLE4S_ZPTRoHQD4teDtjvM9tkcYNY44K/view?usp=drivesdk",
                         2021: "https://drive.google.com/file/d/1wQI_2d2cghrnRoube5CzJcCUhOqnG6oq/view?usp=drivesdk",
