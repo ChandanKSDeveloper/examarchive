@@ -246,7 +246,8 @@
                     name: "Data Communication and Networking",
                     links: {
                         2017: "https://drive.google.com/file/d/1whbe9EWwzpWBK7d_oBSP8N3k95kB8pMH/view?usp=drivesdk",
-                        2018: "https://drive.google.com/file/d/1wnJAp6CybKpIarQPYUc9E2xkJbCBlopo/view?usp=drivesdk",
+                        // 2018: "https://drive.google.com/file/d/1wnJAp6CybKpIarQPYUc9E2xkJbCBlopo/view?usp=drivesdk",
+                        2018: "https://drive.google.com/file/d/1X7u76kB_7uHe_EIQH0jjIOfzlCCt0rOm/view?usp=drivesdk",
                         2019: "https://drive.google.com/file/d/1wsGbJHbOJOYZSAd0M8CTszf7mp2e8u7c/view?usp=drivesdk",
                         2021: "https://drive.google.com/file/d/1x53hBtRI1nsR7nd92SxHUPyNRrB8N3kp/view?usp=drivesdk",
                         2022: "https://drive.google.com/file/d/1x6WX7ABCTVkbPXaafQeFjiCnAFWSINZw/view?usp=drivesdk",

@@ -39,7 +39,7 @@ function Header() {
 
                 <Link
                     to='/home'
-                    className="font-bold text-3xl sm:text-4xl lg:text-6xl sm:font-extrabold ml-4"
+                    className="font-bold text-3xl sm:text-3xl lg:text-5xl sm:font-extrabold ml-4"
                     >
                     Exam Archive 
                 </Link>
