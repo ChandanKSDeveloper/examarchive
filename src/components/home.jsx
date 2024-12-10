@@ -14,7 +14,7 @@ function Home(){
             <section
                 className="w-full h-[500px] p-5  relative hidden sm:block">
                 <div className="absolute bottom-16 right-0 ">
-                    <img src="./cat.png" alt="cat" className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px]  hidden sm:block  " />
+                    <img src="./cat.png" alt="" className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px]  hidden sm:block  " />
                 </div>
                 <div>
                     <h1 className="text-4xl lg:text-5xl dark:text-[#FFF8DC] font-extrabold mb-5 p-5 lg:mx-10">BCA Exam Archive</h1>
