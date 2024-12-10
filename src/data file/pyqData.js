@@ -251,7 +251,8 @@
                         2019: "https://drive.google.com/file/d/1wsGbJHbOJOYZSAd0M8CTszf7mp2e8u7c/view?usp=drivesdk",
                         2021: "https://drive.google.com/file/d/1x53hBtRI1nsR7nd92SxHUPyNRrB8N3kp/view?usp=drivesdk",
                         2022: "https://drive.google.com/file/d/1x6WX7ABCTVkbPXaafQeFjiCnAFWSINZw/view?usp=drivesdk",
-                        2023: "https://drive.google.com/file/d/1xBUNrF-Yr0pPGHDWeHuisl9X3a0f5rXI/view?usp=drivesdk"
+                        2023: "https://drive.google.com/file/d/1xBUNrF-Yr0pPGHDWeHuisl9X3a0f5rXI/view?usp=drivesdk",
+                        2024: "https://drive.google.com/file/d/1eyFmOG1GwTU0_DuHKMfhGdUGpK8FbBMt/view?usp=drivesdk"
                     }
                 },
                 {
@@ -265,7 +266,8 @@
                         2020: "https://drive.google.com/file/d/1vdca37jtKbKmWoGQBgARQkjqlZP67Vki/view?usp=drivesdk",
                         2021: "https://drive.google.com/file/d/1veBaqHn0GrFU7-10FHGL5k706PCEpE62/view?usp=drivesdk",
                         2022: "https://drive.google.com/file/d/1veDFSQJQHhbwzGw9bvZXjULHRBHSNcY-/view?usp=drivesdk",
-                        2023: "https://drive.google.com/file/d/1viFmPv_plAn0Q2gWYIRYMxnbZyeZxUgu/view?usp=drivesdk"
+                        2023: "https://drive.google.com/file/d/1viFmPv_plAn0Q2gWYIRYMxnbZyeZxUgu/view?usp=drivesdk",
+                        2024: "https://drive.google.com/file/d/1j_Jveo8fOL10poiZd1Ze3tW3MuItfu7N/view?usp=drivesdk"
                     }
                 }
             ]
