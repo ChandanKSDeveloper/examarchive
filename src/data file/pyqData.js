@@ -239,7 +239,9 @@
                         2016: "https://drive.google.com/file/d/1vpcqkX_jmWqqUX0laHztgwNxyCpjU6AD/view?usp=drivesdk",
                         2017: "https://drive.google.com/file/d/1w8TCGHOG4zAktMypk2f9t6Gz5sGGlaYW/view?usp=drivesdk",
                         2018: "https://drive.google.com/file/d/1w5m9lkdYEpu6cFU5FiITlHvRzTVTUJKc/view?usp=drivesdk",
-                        2022: "https://drive.google.com/file/d/1wAffbZv23BE_6AlA4iaG67EYZ5nT6nMP/view?usp=drivesdk"
+                        2022: "https://drive.google.com/file/d/1wAffbZv23BE_6AlA4iaG67EYZ5nT6nMP/view?usp=drivesdk",
+                        2024: "https://drive.google.com/file/d/1mk4YwbTOTn-2DPR28KVaWSDlH-1eogw6/view?usp=drivesdk"
+
                     }
                 },
                 {
