@@ -1,0 +1,86 @@
+*{
+    /* @apply transition-colors duration-200; */
+}
+
+/* toggle button style */
+
+.modeLabel{
+    width: 60px;
+    height: 30px;
+    position: relative;
+    display: block;
+    border-radius: 200px;
+    background: #ebebeb;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px 5px 15px rgba(255,255,255,0.4) ;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modeLabel::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left:10px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+#darkmode-toggle{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#darkmode-toggle:checked + .modeLabel{
+    background: #242424;
+}
+
+#darkmode-toggle:checked + .modeLabel::after{
+    left: 50px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777,#3a3a3a);
+}
+
+/* GUI effect */
+.modeLabel:active::after{
+    /* width: 120px; */
+}
+
+.modeLabel svg {
+    width: 70px; /* Set a specific width for the icons */
+    height: 70px; /* Set a specific height for the icons */
+    transition: color 0.3s; /* Optional: smooth color transition */
+    top: 40px;
+    position: absolute;
+    z-index: 100;
+}
+
+.modeLabel > .sun{
+    position: absolute;
+    width: 70px;
+    top: 30px;
+    z-index: 100;
+
+    left: 30px;
+    fill: #fff;
+    transition: 0.3s;
+}
+.modeLabel > .moon{
+    position: absolute;
+    width: 70px;
+    top: 30px;
+    z-index: 100;
+    fill: #7e7e7e;
+    transition: 0.3s;
+}
+
+#darkmode-toggle:checked + .modeLabel > .sun{
+    fill: #7e7e7e;
+}
+#darkmode-toggle:checked + .modeLabel > .moon{
+    fill: #fff;
+}
