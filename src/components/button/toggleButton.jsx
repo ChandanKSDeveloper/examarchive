@@ -8,7 +8,7 @@ function ToggleButton() {
   const browserTheme = window.matchMedia("(prefers-color-scheme : dark)").matches;
 
 
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || (browserTheme ? "dark" : "light"));
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === 'dark');
