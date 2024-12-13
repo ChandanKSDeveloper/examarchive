@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import '../../App.css';
-import {AiOutlineSun, AiOutlineMoon} from 'react-icons/ai'
 
 function ToggleButton() {
+
+  // This checks if the browser or system is set to dark mode.
+  // if the browser is set to dark mode, it will automatically apply dark mode, and localStorage will only come into play if the user overrides the setting by clicking the toggle button.
+  const browserTheme = window.matchMedia("(prefers-color-scheme : dark)").matches;
+
+
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
@@ -16,7 +21,7 @@ function ToggleButton() {
 
   return (
     <div>
-        <input type="checkbox" checked={theme === 'dark'} id="darkmode-toggle"  onClick={toggleTheme}/>
+        <input type="checkbox" checked={theme === 'dark'} id="darkmode-toggle"  onChange={toggleTheme}/>
         <label htmlFor="darkmode-toggle" className="modeLabel"></label>
     </div>
     
