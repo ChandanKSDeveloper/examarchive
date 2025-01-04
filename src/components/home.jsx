@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Card from "./card/card";
 import EmblaCarousel from './carousel/emblaCarousel.jsx'
 
 function Home(){
@@ -70,7 +69,7 @@ function Home(){
                 </h2>
 
             {/* <Card/> */}
-            <div className="flex justify-center mx-3">
+            <div className="flex justify-center mx-3 mb-6">
                 <EmblaCarousel />
 
             </div>
