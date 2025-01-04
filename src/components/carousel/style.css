@@ -1,0 +1,34 @@
+.embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    padding: 5px 5px;
+  
+  }
+  
+  
+  .embla__dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+    
+  .embla__dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+    
+  .embla__dot--selected {
+    background-color: #000;
+  }
+    
+    

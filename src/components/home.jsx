@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "./card/card";
+import EmblaCarousel from './carousel/emblaCarousel.jsx'
 
 function Home(){
     return(
@@ -68,7 +69,11 @@ function Home(){
                     Why Us ?
                 </h2>
 
-            <Card/>
+            {/* <Card/> */}
+            <div className="flex justify-center mx-3">
+                <EmblaCarousel />
+
+            </div>
         
             
             </section>

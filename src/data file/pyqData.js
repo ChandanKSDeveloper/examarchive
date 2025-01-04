@@ -128,6 +128,7 @@
                         2022: "https://drive.google.com/file/d/1uplHHS0DTUqHcowNNKiEY77U0_kLpJK5/view?usp=drivesdk",
                         2023: "https://drive.google.com/file/d/1sw15PSReLAUUMDsdzp9rWjiVRCyLJfPf/view?usp=drivesdk",
                         2023: "https://drive.google.com/file/d/1uoMYZqXIw9VeJVwI9BtEoLyQpWaXfWG1/view?usp=drivesdk",
+                        2024: "https://drive.google.com/file/d/18w6xcE5gUDnUj-tZ5h8HLii-rxB4wJAM/view?usp=drivesdk"
                     }
                 },
                 {
@@ -289,6 +290,7 @@
                         2021: "https://drive.google.com/file/d/1veBaqHn0GrFU7-10FHGL5k706PCEpE62/view?usp=drivesdk",
                         2022: "https://drive.google.com/file/d/1veDFSQJQHhbwzGw9bvZXjULHRBHSNcY-/view?usp=drivesdk",
                         2023: "https://drive.google.com/file/d/14WgDqffvFdDQUtuCTBmuCI5qxH6KVpT7/view?usp=drivesdk",
+                        2024: "https://drive.google.com/file/d/1E5PDmSQS2OPybWya4SZ2vg2WxZp8dhpc/view?usp=drivesdk",
                         
                     }
                 }
