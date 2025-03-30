@@ -1,13 +1,53 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import GridItems from '../data file/aboutData';
 import { UseIsVisible } from "../hooks/useIsVisible";
+import './carousel/style.css';
 
 function About(){
     const slideLeft = useRef();
-    const isVisibleLeft = UseIsVisible(slideLeft);
+    // const isVisibleLeft = UseIsVisible(slideLeft);
+    const [isDisclaimerVisible, setIsDisclaimerVisible] = useState(false);
 
+
+    const elementsRef = useRef([]);
+    const [visibleItems, setVisibleItems] = useState([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        setVisibleItems(prev => [...prev, entry.target]);
+                        observer.unobserve(entry.target);
+                    } 
+                });
+            },
+            {threshold : 0.4}
+        );
+
+        elementsRef.current.forEach(el => {
+            if (el) observer.observe(el);
+        });
+
+        return () => observer.disconnect();
+    }, [])
   
+    // Ensure disclaimer animates only once
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsDisclaimerVisible(true);
+                    observer.disconnect(); // Stop observing after first appearance
+                }
+            },
+            { threshold: 0.5 }
+        );
 
+        if (slideLeft.current) observer.observe(slideLeft.current);
+
+        return () => observer.disconnect();
+    }, []);
   
 
     return(
@@ -58,10 +98,12 @@ function About(){
             </div>
 
             {/* Mobile view */}
-
+ 
             <div className="visible sm:hidden flex flex-col justify-center items-center ">
                 {GridItems.map((item,index) => (
-                    <div key={item.id} className="relative h-[450px] w-10/12  rounded-md mb-10 border-b-[10px] border-teal-400">
+                    <div key={item.id}
+                        ref={el => (elementsRef.current[index] = el)}
+                     className={`appearAnimation relative h-[450px] w-10/12  rounded-md mb-10 border-b-[10px] border-teal-400 ${visibleItems.includes(elementsRef.current[index]) ? 'show' : ''}`}>
 
                         <img src={item.imgSrc} alt={item.heading} className="z-0 h-full w-full rounded-md object-cover" />
                     
@@ -81,7 +123,7 @@ function About(){
             </div>
 
        
-            <section ref={slideLeft} className={`bg-red-200 text-red-600 p-4 mx-auto text-center border-l-8 border-red-600 rounded-md mt-4 ${isVisibleLeft ? 'animate-slideLeft' : ''}`}>
+            <section ref={slideLeft} className={`bg-red-200 text-red-600 p-4 mx-auto text-center border-l-8 border-red-600 rounded-md mt-4 slideLeft ${ isDisclaimerVisible ? 'show' : ''}`}>
                 <p> <span className="font-semibold ">Disclaimer :</span> This is not the official site of Gurugram University. It is a student-run site to help fellow students by providing previous year question papers.</p>
             </section>
         </div>

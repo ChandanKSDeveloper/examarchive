@@ -43,8 +43,8 @@ export function EmblaCarousel() {
 
 
   return (
-    <div className="embla flex flex-wrap justify-center max-w-[600px] " ref={emblaRef}>
-        <div className="embla__container ">
+    <div className="embla flex flex-wrap justify-center max-w-[600px]" ref={emblaRef}>
+        <div className="embla__container  cursor-pointer">
         {data.map((item) => (
                 <div key={item.id}
               className="embla__slide relative m-2 lg:h-[80vh] md:h-[65vh] sm:h-[60vh] w-[90%] lg:w-[30%] ">
@@ -54,8 +54,8 @@ export function EmblaCarousel() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-left">
-                  <h1 className="font-semibold text-white lg:text-3xl sm:text-2xl">{item.feature}</h1>
-                  <p className="mt-2 text-xl text-gray-300 lg:text-2xl sm:xl mb-7">
+                  <h1 className="font-semibold text-white lg:text-3xl sm:text-2xl md:text-2xl">{item.feature}</h1>
+                  <p className="mt-2 text-xl text-gray-300 lg:text-2xl sm:text-xl md:xl mb-7">
                       {item.about}
                   </p>
               </div>

@@ -34,7 +34,7 @@ function Home(){
             <section className="sm:hidden w-auto mx-5 mb-8 pt-6  h-[500px] relative  shadow-black ">
 
                 <div className="w-full h-full  border-l-4 border-r-4 border-t-4  dark:border-white border-blue-500 rounded-lg">
-                    <img src="./about4.jpg" alt="background img"  className="w-full h-full object-cover pb-28  "/>
+                    <img src="./about4.jpg" alt="background img"  className="w-full h-full object-cover pb-28 rounded-t-md"/>
 
                 </div>
 
