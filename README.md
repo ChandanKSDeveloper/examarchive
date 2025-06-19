@@ -49,4 +49,4 @@ This project was developed with the help of various resources :
 
 ---
 
-&copy; 2024 Exam Archive. All rights reserved.
+&copy; 2025 Exam Archive. All rights reserved.
